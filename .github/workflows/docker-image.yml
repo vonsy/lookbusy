@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: vonsy/nostr:$(date +%s)
+          tags: vonsy/nostr:latest
