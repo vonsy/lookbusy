@@ -23,5 +23,8 @@ docker build --target builder -t nostr:1.0 .
 # 导出tar
 docker save -o ~/Desktop/nostr.tar nostr:1.0
 # 运行
-docker run -d --name nostr -e MIN=15 -e MAX=25 -e MEM=4GB nostr:1.0
+# MIN,CPU最小占用
+# MAX,CPU最大占用
+# MEM,内存占用(e.g. 500MB, 5GB)
+docker run -d --name nostr -e MIN=15 -e MAX=25 -e MEM=4GB vonsy/nostr:latest
 ```
